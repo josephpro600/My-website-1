@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kira Clinic</title>
+    <style>
+        /* Basic styles for the website */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            position: relative;
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            text-align: left;
+            overflow: visible;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img.header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .header-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            background-color: transparent;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 0;
+        }
+        header .header-text {
+            position: static;
+            top: auto;
+            left: auto;
+            transform: none;
+            color: #007bff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            position: static;
+            background: black;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            z-index: auto;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            background: transparent;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+        }
+        #about p {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #ff8400;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+        .service-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .service-item img {
+            width: 600px;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #0056b3;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <style>
+        .contact-container {
+            text-align: center;
+        }
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .contact-item {
+            background-color: #e0e0e0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-title">KIRA CLINIC</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>   
+<section id="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <div class="contact-item"><strong>Phone:</strong> 0788654325</div>
+            <div class="contact-item"><strong>Email:</strong> info@kiraclinic.com</div>
+            <div class="contact-item"><strong>Location:</strong> Nyagatare District, Rwanda</div>
+        </div>
+        <form class="login-form" action="#" method="post">
+          <fieldset>>
+            <h3>love to hear from you</h3>
+            <p>lets get in touch</p>
+            <label for="your name">your name</label>:</label><br />
+            <input type="text" id="username" name="yourname" required />
+             <label for="your email">your email</label>:</label><br />
+            <input type="text" id="useremail" name="youremail" required /><br />
+            <label for="subject">subject</label>:</label><br />
+            <input type="text" id="subject" name="subject" required /><br />
+            <button type="submit">send message</button></fieldset >
+        </form>
+    </div>
+</section> 
+<style>
+    .login-form {
+        margin-top: 20px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        font-family: Arial, sans-serif;
+    }
+    .login-form h3 {
+        text-align: center;
+        margin-bottom: 15px;
+        color: #333;
+    }
+    .login-form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .login-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .login-form button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<div class="services-followus-container">
+<div class="our-services" style="background-color: black; color: white; padding: 15px 20px; border-radius: 5px; box-shadow: 1px 1px 5px rgba(0,0,0,0.1);">
+        <h1>KIRA CLINIC</h1>
+        <ul>
+            <li>Rwanda nyagatare district</li>
+            <li>sreet kv 20 st</li>
+            <li>phone=+250 787 888 888</li>
+            <li>Email:info@kira clinic.com</li> 
+        </ul>
+    </div>
+    <div class="our-services" style="background-color: black; color: white; padding: 15px 20px; border-radius: 5px; box-shadow: 1px 1px 5px rgba(0,0,0,0.1);">
+        <h1>Our Services</h1>
+        <ul>
+            <li>treatment</li>
+            <li>vaccination</li>
+            <li>laboratory testing</li>
+        </ul>
+    </div>
+    <div class="follow-us" style="background-color: black; color: white; padding: 15px 20px; border-radius: 5px; box-shadow: 1px 1px 5px rgba(0,0,0,0.1);">
+        <h1>Follow Us</h1>
+        <ul>
+            <li>email</li>
+            <li>contact on 0788654325</li>
+            <li>facebook: kira clinic</li>
+            <li><a href="location">location</a></li>
+        </ul>
+    </div>
+</div>
+<footer>
+    &copy; 2025 Kira Clinic. All rights reserved.
+</footer>
+<style>
+    .services-followus-container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin: 20px 10px;
+    }
+    .our-services, .follow-us {
+        background: white;
+        padding: 15px 20px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    }
+    .our-services {
+        flex: 1 1 50%;
+    }
+    .follow-us {
+        flex: 1 1 40%;
+    }
+    .our-services ul, .follow-us ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        font-size: 1.1em;
+        color: #333;
+    }
+</style>
+
+</body>
+</html>
